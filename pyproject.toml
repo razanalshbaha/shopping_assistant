@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "untitled"
+version = "0.1.0"
+description = ""
+authors = ["razanalshbaha <razanalshabah19@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+langchain = "^0.1.20"
+fastapi = "^0.111.0"
+langchain-openai = "^0.1.7"
+langchainhub = "^0.1.15"
+azure-cognitiveservices-search-visualsearch = "^0.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
