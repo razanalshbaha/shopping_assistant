@@ -8,12 +8,12 @@ from app.config import (
 
 def search_product_by_image(image_path):
     headers= {
-    'Ocp-Apim-Subscription-Key': 'a26da85516f34ec6810578315151a554',
+    'Ocp-Apim-Subscription-Key': API_KEY,
     'Content-Type': 'multipart/form-data'
     }
     with open(image_path, 'rb') as image_file:
         files = {'image': image_file}
-        response = httpx.post("https://api.bing.microsoft.com/v7.0/images/visualsearch", headers=headers, files=files)
+        response = httpx.post(ENDPOINT, headers=headers, files=files)
     
     result = response.json()
     print(result)
